@@ -56,7 +56,7 @@ def convertQversion(image, gender, filePath):
 
 
 if __name__ == "__main__":
-    file_path = r"C:\Users\PJ-Lin\Documents\webuilight\testImg\multiple.jpg"
+    file_path = r"C:\Users\PJ-Lin\Documents\webuilight\testImg\manypeople2.jpg"
     save_path = r"C:\Users\PJ-Lin\Documents\webuilight\testImg"
     path = normalize_path(file_path)
     name = file_path.split("\\")[-1]

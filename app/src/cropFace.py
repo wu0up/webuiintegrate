@@ -3,7 +3,7 @@ from deepface import DeepFace
 
 
 def crop_face(inputfile, fileName):
-    outputFile = inputfile.split("\\")[:-1]
+    outputFile = r"C:\Users\PJ-Lin\Documents\webuilight\testImg"
     fileName = inputfile.split("\\")[-1]
     im = cv2.imread(inputfile)
 
@@ -29,7 +29,7 @@ def crop_face(inputfile, fileName):
             images[name] = img_crop
             # cv2.imshow(str(counter), cropped)
 
-            cv2.imwrite(outputFile + "/" + name, cropped)
+            cv2.imwrite(outputFile + "\\" + name, cropped)
             cv2.waitKey(0)
 
     return images
