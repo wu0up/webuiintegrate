@@ -58,11 +58,11 @@ def age_detection(img):
 #     return image
 
 
-def gender_modified(age, gender, race):
+def gender_modified(age, gender):
     age = int(age)
     if age < 18 and gender == "man":
         gender = "boy"
     elif age < 18 and gender == "woman":
         gender = "girl"
-    people_describe = f"{age} years old {gender}, {race},"
+    people_describe = f"{age} years old {gender},"
     return people_describe
